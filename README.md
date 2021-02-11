@@ -1,6 +1,6 @@
 # node.js_render_from_api_to-_page
 Simple Node.js for render  API request to a node.js page
-
+---
 
 npm init 
 
@@ -32,11 +32,11 @@ const apiRoute = require('./src/routes/apitest')
 So then use this newsRoute it look into the  news.js in routes and see what to do with the data and using the news.js in views to render/show it as we expected
 app.use('/apitest', apiRoute)
 
-This tells that / using the newsRoute
+This tells that /apitest using the newsRoute
 
 
 test on:
-http://localhost:5000/apitest
+| http://localhost:5000/apitest
 
 
 
