@@ -4,9 +4,11 @@ const axios = require('axios')
 
 apiRouter.get('', async(req, res) => {
     // res.render('apitest')
+    //console.log(apitestAPI.data)
 
     try {
-        const apitestAPI = await axios.get(`https://evilinsult.com/generate_insult.php?lang=es&type=json`)
+        const apitestAPI = await axios.get(`https://raddy.co.uk/wp-json/wp/v2/posts/`)
+        res.render('apitest', { articles: apitestAPI.data })
         console.log(apitestAPI.data)
     } catch (err) {
         if (err.response) {
